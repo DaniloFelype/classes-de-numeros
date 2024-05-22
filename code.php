@@ -12,9 +12,6 @@
         <h1>Classes de números</h1>
         <?php
         function verificarNumero($numero) {
-            if ($numero == 0) {
-                return "O número zero é neutro.";
-            }
             if ($numero % 2 == 0) {
                 $paridade = "par";
             } else {
@@ -32,7 +29,7 @@
             }
             return "O número $numero é $paridade, $sinal e $redondo.";
         }
-        $numeros = [5, 2, -4, 0, 20];
+        $numeros = [5, 2, -4, 40, 20];
         foreach ($numeros as $numero) {
             echo "<div class='result'>" . verificarNumero($numero) . "</div>";
         }
